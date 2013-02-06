@@ -1,5 +1,5 @@
 /**
- * jQuery Validation Plugin 1.11.0pre
+ * jQuery Validation Plugin 1.12.0pre
  *
  * http://bassistance.de/jquery-plugins/jquery-plugin-validation/
  * http://docs.jquery.com/Plugins/Validation
@@ -922,12 +922,12 @@ $.extend($.validator, {
 		});
 
 		// clean number parameters
-		$.each(["minlength", "maxlength", "min", "max"], function() {
+		$.each(['minlength', 'maxlength'], function() {
 			if ( rules[this] ) {
 				rules[this] = Number(rules[this]);
 			}
 		});
-		$.each(["rangelength", "range"], function() {
+		$.each(['rangelength'], function() {
 			var parts;
 			if ( rules[this] ) {
 				if ( $.isArray(rules[this]) ) {
